@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+//Ruta del recurso que consume los datos
 Route::resource('consumir', 'ConsumirSpotifyController', ['except' => 'show']);
